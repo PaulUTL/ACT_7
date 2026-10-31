@@ -1,5 +1,7 @@
 import pytest
-from tienda import calcular_precio, calcular_iva
+
+from tienda import calcular_iva, calcular_precio
+
 
 def test_calcular_precio():
     assert calcular_precio(200, 25) == 150

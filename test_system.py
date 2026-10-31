@@ -1,6 +1,7 @@
 import subprocess
 import sys
 
+
 def test_compra():
     result = subprocess.run([sys.executable, 'main.py'], input='200\n25\n', text=True, capture_output=True)
     

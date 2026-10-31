@@ -1,5 +1,6 @@
 from main import main
 
+
 def test_main(monkeypatch, capsys):
     inputs = iter(["200", "25"])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
