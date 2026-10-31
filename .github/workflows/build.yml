@@ -44,8 +44,4 @@ jobs:
       - name: Verificar instalacion
         run: |
           python -c "from devops_tienda.tienda import calcular_precio; assert calcular_precio(200, 25) == 150"
-          printf '200
-          25
-'         
-  | devops-tienda
-        shell: bash
+          printf '200\n25\n' | devops-tienda
